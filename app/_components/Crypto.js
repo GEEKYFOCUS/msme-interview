@@ -21,7 +21,7 @@ export default function Crypto() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        setLoading(true); // Set loading to true at the start of the fetch
+        setLoading(true);
         const response = await fetch(
           `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency}&order=market_cap_desc&per_page=10&page=${page}&sparkline=false`,
           {
@@ -37,12 +37,12 @@ export default function Crypto() {
         }
 
         const data = await response.json();
-        setCryptoData(data); // Update crypto data with the fetched data
+        setCryptoData(data);
       } catch (error) {
         console.log(error);
-        setErrorMessage(error.message); // Set the error message
+        setErrorMessage(error.message);
       } finally {
-        setLoading(false); // Ensure loading is false after fetch or error
+        setLoading(false);
       }
     };
 

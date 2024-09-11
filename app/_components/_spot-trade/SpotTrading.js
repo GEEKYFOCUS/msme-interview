@@ -28,7 +28,7 @@ function SpotTrading() {
       }
     };
     fetchSpotData();
-  }, []);
+  }, [spotData]);
 
   if (isLoading) return <div>Loading...</div>;
   if (errorMessage)
@@ -40,7 +40,7 @@ function SpotTrading() {
           <div className="relative md:w-8 w-4 aspect-square row-start-1 row-span-7 ">
             <Image
               src={spotData.image}
-              alt="bitcoin image"
+              alt="bitcoin"
               quality={90}
               fill
               className=" md:w-12 w-6 object-contain "

@@ -20,6 +20,7 @@ function SpotTradeData() {
           <div className="w-8 relative aspect-square cursor-pointer">
             <Image
               src="../spot-trade-icons/icon-2.svg"
+              alt="trade"
               fill
               className="object-contain"
             />
@@ -27,6 +28,7 @@ function SpotTradeData() {
           <div className="w-8 relative aspect-square cursor-pointer">
             <Image
               src="../spot-trade-icons/icon-3.svg"
+              alt="trade"
               fill
               className="object-contain"
             />
@@ -34,6 +36,7 @@ function SpotTradeData() {
           <div className="w-8 relative aspect-square cursor-pointer">
             <Image
               src="../spot-trade-icons/icon-4.svg"
+              alt="trade"
               fill
               className="object-contain"
             />
@@ -41,6 +44,7 @@ function SpotTradeData() {
           <div className="w-8 relative aspect-square cursor-pointer">
             <Image
               src="../spot-trade-icons/icon-5.svg"
+              alt="trade"
               fill
               className="object-contain"
             />
@@ -48,12 +52,14 @@ function SpotTradeData() {
           <div className="w-8 relative aspect-square cursor-pointer">
             <Image
               src="../spot-trade-icons/icon-6.svg"
+              alt="trade"
               fill
               className="object-contain"
             />
           </div>
           <div className="w-6 relative aspect-square cursor-pointer">
             <Image
+              alt="trade"
               src="../spot-trade-icons/icon-7.svg"
               fill
               className="object-contain"
@@ -62,6 +68,7 @@ function SpotTradeData() {
           <div className="w-6 relative aspect-square cursor-pointer">
             <Image
               src="../spot-trade-icons/icon-8.svg"
+              alt="trade"
               fill
               className="object-contain"
             />
@@ -69,6 +76,7 @@ function SpotTradeData() {
           <div className="w-6 relative aspect-square cursor-pointer">
             <Image
               src="../spot-trade-icons/icon-9.svg"
+              alt="trade"
               fill
               className="object-contain"
             />
@@ -76,6 +84,7 @@ function SpotTradeData() {
           <div className="w-6 relative aspect-square cursor-pointer">
             <Image
               src="../spot-trade-icons/icon-10.svg"
+              alt="trade"
               fill
               className="object-contain"
             />
@@ -83,6 +92,7 @@ function SpotTradeData() {
           <div className="w-6 relative aspect-square cursor-pointer">
             <Image
               src="../spot-trade-icons/icon-11.svg"
+              alt="trade"
               fill
               className="object-contain"
             />

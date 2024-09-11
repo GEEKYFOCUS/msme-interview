@@ -21,19 +21,19 @@ export default function SpotTradeHeader() {
       </div>
       <div className="flex justify-evenly bg-primary-2000 px-2 py-1  rounded-full">
         <div className="w-3 relative aspect-square cursor-pointer">
-          <Image src="../trade/chart.svg" fill className="object-contain" />
+          <Image src="../trade/chart.svg"  alt="chart"fill className="object-contain" />
         </div>
         <div className="w-3 relative aspect-square cursor-pointer">
-          <Image src="../trade/setting.svg" fill className="object-contain" />
+          <Image src="../trade/setting.svg"  alt="chart" fill className="object-contain" />
         </div>
         <div className="w-3 relative aspect-square cursor-pointer">
-          <Image src="../trade/camera.svg" fill className="object-contain" />
+          <Image src="../trade/camera.svg"  alt="chart"  fill className="object-contain" />
         </div>
         <div className="w-3 relative aspect-square cursor-pointer">
-          <Image src="../trade/arrow.svg" fill className="object-contain" />
+          <Image src="../trade/arrow.svg"  alt="chart"  fill className="object-contain" />
         </div>
         <div className="w-3 relative aspect-square cursor-pointer">
-          <Image src="../trade/star.svg" fill className="object-contain" />
+          <Image src="../trade/star.svg"  alt="chart"  fill className="object-contain" />
         </div>
       </div>
       <div className="flex justify-between md:justify-normal   gap-x-2 bg-primary-2000  px-2 py-1 rounded-full">

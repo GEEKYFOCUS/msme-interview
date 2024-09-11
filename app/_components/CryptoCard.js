@@ -27,7 +27,7 @@ function CryptoCard({ cryptoData }) {
               {crypto.symbol.toUpperCase()}
             </span>
           </div>
-          <div className="text-base sm:text-xs !text-[8px]  ">
+          <div className=" sm:text-xs   !text-[8px]  ">
             ${crypto.current_price}
           </div>
           <div
