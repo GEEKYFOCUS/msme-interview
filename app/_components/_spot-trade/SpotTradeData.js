@@ -12,6 +12,7 @@ function SpotTradeData() {
         <div className="px-1 h-24 md:w-auto  py-4 flex md:flex-col flex-row gap-y-4 gap-x-2 md:items-center w-full justify-center bg-primary-3000 rounded-2xl ">
           <div className="w-8 relative aspect-square cursor-pointer">
             <Image
+              alt="trade"
               src="../spot-trade-icons/icon-1.svg"
               fill
               className="object-contain"

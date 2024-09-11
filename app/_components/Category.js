@@ -1,4 +1,6 @@
 "use client";
+
+import { Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 function Category() {
   const [setSearchParams] = useSearchParams();
@@ -31,22 +33,25 @@ function Category() {
   ];
 
   return (
-    <div className="mt-12">
-      <div className="grid md:grid-cols-8 grid-cols-4 gap-4">
-        {category.map((cat, index) => (
-          <div key={index}
-            className={`cursor-pointer px-2 py-2 text-xs md:text-base text-center rounded-lg ${
-              currentCategory === cat.value
-                ? "bg-yellow-500 text-black"
-                : "bg-primary-2000 text-white"
-            }`}
-            onClick={() => handleCategoryClick(cat.value)}
-          >
-            {cat.option}
-          </div>
-        ))}
+    <Suspense>
+      <div className="mt-12">
+        <div className="grid md:grid-cols-8 grid-cols-4 gap-4">
+          {category.map((cat, index) => (
+            <div
+              key={index}
+              className={`cursor-pointer px-2 py-2 text-xs md:text-base text-center rounded-lg ${
+                currentCategory === cat.value
+                  ? "bg-yellow-500 text-black"
+                  : "bg-primary-2000 text-white"
+              }`}
+              onClick={() => handleCategoryClick(cat.value)}
+            >
+              {cat.option}
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </Suspense>
   );
 }
 
