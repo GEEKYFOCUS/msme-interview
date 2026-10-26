@@ -4,7 +4,6 @@ import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import Spinner from "./Spinner";
 import CryptoCard from "./CryptoCard";
-
 export default function Crypto() {
   // curl --request GET \
   //      --url https://api.coingecko.com/api/v3/coins/markets \
@@ -51,22 +50,16 @@ export default function Crypto() {
   }, [currency, page]);
 
   if (loading) {
-    return (
-      <Suspense>
-        <Spinner />;
-      </Suspense>
-    );
+    return <Spinner />;
   }
 
   return (
-    <Suspense>
-      <div>
-        {errorMessage ? (
-          <p className="text-white">{errorMessage}</p>
-        ) : (
-          <CryptoCard cryptoData={cryptoData} />
-        )}
-      </div>
-    </Suspense>
+    <div>
+      {errorMessage ? (
+        <p className="text-white">{errorMessage}</p>
+      ) : (
+        <CryptoCard cryptoData={cryptoData} />
+      )}
+    </div>
   );
 }
